@@ -1,0 +1,124 @@
+/* General Tags */
+* {
+  font-family: "Fira Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover, button:hover {
+  filter: brightness(80%);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+button {
+  background-color: dodgerblue;
+  border-color: transparent;
+  border-radius: 25px;
+  font-size: 25px;
+}
+
+button a {
+  color: white;
+  margin: 20px;
+}
+
+ul li button {
+  margin: 5px;
+}
+
+/* General Classes */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.center-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.horizontal li {
+  display: inline;
+}
+
+.navbar-spacing li {
+  margin-right: 50px;;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.normal-weight {
+  font-weight: normal;
+}
+
+.section-underline {
+  border-bottom: 1px dotted black;
+  width: 100%;
+}
+
+ul.no-bullets {
+  list-style-type: none;
+  padding: 0;
+}
+
+.wrapper { 
+  padding: 25px;
+}
+
+/* Header */
+header {
+  background-color: dodgerblue;
+  height: 50px;
+}
+
+header nav ul li a {
+  color: white;
+  font-size: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: gray;
+  height: 50px;
+}
+
+footer nav ul li a {
+  color: gold;
+  font-size: 25px;
+}
+
+/* Home */
+#home-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#home-img {
+  width: auto;
+  height: 75vh;
+  border-radius: 25px;
+}
+
+/* Resume */
+#resume h1, #resume h2, #resume h4  {
+  font-weight: normal;
+}
+
+#resume h4 {
+  font-style: italic;
+}

@@ -5,21 +5,41 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="./style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/11cbf515ee.js" crossorigin="anonymous"></script>
     <title>Alan Dang | Personal Website</title>
   </head>
 
-  {% include header.html %}
+  <body>
+    {% include header.html %}
 
-  <body> 
-    Software engineer living in Brooklyn, NY. Enjoys cooking and soccer. <br>
-    Check out my:
-    <ul>
-      <li>
-        <a href="./resume.html">Resume</a>
-      </li>
-      <li>
-        <a href="./projects.html">Projects</a>
-      </li>
-    </ul>
+    <div id="home-grid">
+      <div class="center-column wrapper">
+        <img src="./Images/me.png" id="home-img">
+      </div>
+
+      <div class="center-column wrapper"> 
+        <h1>Hi, I'm Alan, and this is my personal website.</h1>
+        <p>
+          I'm currently a software engineer at <a href="https://www.commonbond.co" class="link">CommonBond</a>, living in Brooklyn, NY. 
+          In my free time, I enjoy cooking and playing soccer. Check out my: 
+        </p>
+        <ul class="no-bullets">
+          <li>
+            <button>
+              <a href="./resume.html">Resume</a>
+            </button>
+          </li>
+          <li>
+            <button>
+              <a href="./projects.html">Projects</a>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    {% include footer.html %}
   </body>
 </html>
