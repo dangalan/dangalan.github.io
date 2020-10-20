@@ -54,6 +54,10 @@ ul li button {
   display: inline;
 }
 
+.link:link {
+  color: dodgerblue;
+}
+
 .navbar-spacing li {
   margin-right: 50px;;
 }
