@@ -107,15 +107,30 @@ footer nav ul li a {
 }
 
 /* Home */
-#home-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+#home-img {
+  width: 50%;
+  border-radius: 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
-#home-img {
-  width: auto;
-  height: 75vh;
-  border-radius: 25px;
+@media only screen and (max-width: 1080px) {
+  #home-text h1 {
+    font-size: 24px;
+  }
+  button {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (min-width: 873px) {
+  #home-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #home-img {
+    width: 60%;
+  }
 }
 
 /* Resume */
