@@ -7,8 +7,8 @@ window.addEventListener("load", function() {
 });
 
 function parseFilePathToNavLinkId(filePath) {
-  // On initial load the file path is blank
+  // On homepage file path is blank
   if (filePath === "/")
-    return "index-link"
+    return "home-link"
   return filePath.split(".")[0].slice(1).concat("-link")
 }
