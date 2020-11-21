@@ -1,5 +1,6 @@
 // Underline current page's nav link
 window.addEventListener("load", function() {
+  console.log(window.location.pathname)
   const navLink = document.getElementById(parseFilePathToNavLinkId(window.location.pathname))
   navLink.style.textDecoration = "underline"
   navLink.style.textDecorationColor = "gold"
